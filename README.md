@@ -1,4 +1,4 @@
-# Ip Address # [![Build Status](https://travis-ci.org/gwkunze/IpAddress.png)](https://travis-ci.org/gwkunze/IpAddress)
+# Ip Address  [![Build Status](https://travis-ci.org/gwkunze/IpAddress.png)](https://travis-ci.org/gwkunze/IpAddress)
 
 This library allows you to handle IP addresses in various forms (currently IPv4 only) and test whether an IP matches
 certain constraints (equality, in a subnet or in a range).
