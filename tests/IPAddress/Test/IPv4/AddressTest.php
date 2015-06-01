@@ -151,6 +151,8 @@ class AddressTest extends \PHPUnit_Framework_TestCase
             array(array()),
             array(array(1, 2, 3, 4, 5)),
             array(array(-1)),
+            array(array(10,20,30,300)),
+            array(array("10", "20", "30", "300")),
         );
     }
 
