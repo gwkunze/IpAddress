@@ -61,9 +61,12 @@ class Address extends IPAddress implements \ArrayAccess, Matcher
         }
 
         if (is_array($address) && count($address) == 4) {
-            $this->address = array_map(function ($i) {
-                return Utility::parseUint($i, 8);
-            }, $address);
+            $this->address = array(
+                Utility::parseUint($address[0], 8),
+                Utility::parseUint($address[1], 8),
+                Utility::parseUint($address[2], 8),
+                Utility::parseUint($address[3], 8),
+            );
             return;
         }
         throw new InvalidFormatException("Invalid IP address specified");
