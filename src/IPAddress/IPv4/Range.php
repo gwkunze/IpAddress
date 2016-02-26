@@ -58,7 +58,7 @@ class Range implements Matcher
      */
     public static function fromString($string)
     {
-        if (preg_match("/^(\\d+.\\d+.\\d+.\\d+)\\s*(\\-\\s*)?(\\d+.\\d+.\\d+.\\d+)$/", $string, $m)) {
+        if (preg_match("/^(\\d+\\.\\d+\\.\\d+\\.\\d+)\\s*(\\-\\s*)?(\\d+\\.\\d+\\.\\d+\\.\\d+)$/", $string, $m)) {
             return new self($m[1], $m[3]);
         }
 

@@ -76,6 +76,7 @@ class SubnetTest extends \PHPUnit_Framework_TestCase
             array("10.0.0.1nm255.0.0.0", "10.0.0.1 netmask 255.0.0.0"),
             array("10.0.0.1 nm 255.0.0.0", "10.0.0.1 netmask 255.0.0.0"),
             array("10.0.0.1/8", "10.0.0.1 netmask 255.0.0.0"),
+            array("255.255.255.255/32", "255.255.255.255 netmask 255.255.255.255"),
         );
     }
 

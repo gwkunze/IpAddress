@@ -63,11 +63,11 @@ class Subnet implements Matcher
     {
         $string = trim($string);
 
-        if(preg_match("/^(\\d+.\\d+.\\d+.\\d+)\\s*((nm|netmask)\\s*)?(\\d+.\\d+.\\d+.\\d+)$/", $string, $m)) {
+        if(preg_match("/^(\\d+\\.\\d+\\.\\d+\\.\\d+)\\s*((nm|netmask)\\s*)?(\\d+\\.\\d+\\.\\d+\\.\\d+)$/", $string, $m)) {
             return new self($m[1], $m[4]);
         }
 
-        if(preg_match("~^(\\d+.\\d+.\\d+.\\d+)/(\\d+)$~", $string, $m)) {
+        if(preg_match("~^(\\d+\\.\\d+\\.\\d+\\.\\d+)/(\\d+)$~", $string, $m)) {
             return self::fromCidr($m[1], (int)$m[2]);
         }
 
